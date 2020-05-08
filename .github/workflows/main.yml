@@ -49,4 +49,4 @@ jobs:
       - name: Confirm notebook hasn't changed
         # live feed, so the output changes
         if: matrix.notebook != 'lecture_6.ipynb'
-        run: ./scripts/update.sh ${{ matrix.notebook }}
+        run: ./scripts/check_change.sh ${{ matrix.notebook }}
